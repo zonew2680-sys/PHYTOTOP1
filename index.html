@@ -37,7 +37,7 @@
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#produits">Produits</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="Conctacts.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -132,25 +132,33 @@
         </section>
 
         <section class="carousel-section">
-        <div class="carousel-header">
-            <div class="carousel-tag">NOS PROMOTIONS</div>
-            <h2 class="carousel-title">Découvrez Nos <span class="highlight">Offres</span></h2>
-            <p class="carousel-subtitle">Des produits de qualité supérieure pour booster vos rendements agricoles</p>
-        </div>
+            <div class="carousel-header">
+                <div class="carousel-tag">✦ NOS PROMOTIONS</div>
+                <h2 class="carousel-title">Découvrez Nos <span class="highlight">Offres</span></h2>
+                <p class="carousel-subtitle">Des produits de qualité supérieure pour booster vos rendements agricoles</p>
+            </div>
 
         <div class="carousel-container">
+            <!-- Slide counter -->
+            <div class="slide-counter">
+                <span id="currentSlideNum">01</span>
+                <span class="counter-sep">/</span>
+                <span class="counter-total">04</span>
+            </div>
+
             <div class="carousel-wrapper" id="carouselWrapper">
                 <!-- Slide 1 -->
-                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1600');">
-                    <div class="carousel-overlay"></div>
-                    <div class="carousel-content">
-                        <div class="slide-badge">
-                            🌱 NOUVELLE GAMME
+                <div class="carousel-slide">
+                    <div class="slide-image-panel" style="background-image: url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200');"></div>
+                    <div class="slide-content-panel">
+                        <div class="slide-badge">🌱 NOUVELLE GAMME</div>
+                        <h3 class="slide-title">Engrais NPK<br><span>Premium</span></h3>
+                        <p class="slide-description">Maximisez vos rendements avec notre gamme complète d'engrais certifiés. Formulation équilibrée pour tous types de cultures.</p>
+                        <div class="slide-tags">
+                            <span class="slide-tag">Certifié</span>
+                            <span class="slide-tag">Toutes cultures</span>
+                            <span class="slide-tag">Haute efficacité</span>
                         </div>
-                        <h3 class="slide-title">Engrais NPK Premium</h3>
-                        <p class="slide-description">
-                            Maximisez vos rendements avec notre gamme complète d'engrais certifiés. Formulation équilibrée pour tous types de cultures.
-                        </p>
                         <a href="#produits" class="slide-btn">
                             Découvrir les produits
                             <i class="fas fa-arrow-right"></i>
@@ -159,16 +167,17 @@
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1600');">
-                    <div class="carousel-overlay"></div>
-                    <div class="carousel-content">
-                        <div class="slide-badge">
-                            🛡️ PROTECTION OPTIMALE
+                <div class="carousel-slide">
+                    <div class="slide-image-panel" style="background-image: url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1200');"></div>
+                    <div class="slide-content-panel">
+                        <div class="slide-badge">🛡️ PROTECTION OPTIMALE</div>
+                        <h3 class="slide-title">Insecticides<br><span>Efficaces</span></h3>
+                        <p class="slide-description">Protégez vos cultures contre tous les ravageurs. Action rapide et longue durée pour une protection maximale.</p>
+                        <div class="slide-tags">
+                            <span class="slide-tag">Action rapide</span>
+                            <span class="slide-tag">Longue durée</span>
+                            <span class="slide-tag">Protection max</span>
                         </div>
-                        <h3 class="slide-title">Insecticides Efficaces</h3>
-                        <p class="slide-description">
-                            Protégez vos cultures contre tous les ravageurs. Action rapide et longue durée pour une protection maximale.
-                        </p>
                         <a href="#produits" class="slide-btn">
                             Voir la gamme
                             <i class="fas fa-arrow-right"></i>
@@ -177,16 +186,17 @@
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=1600');">
-                    <div class="carousel-overlay"></div>
-                    <div class="carousel-content">
-                        <div class="slide-badge">
-                            🚚 LIVRAISON RAPIDE
+                <div class="carousel-slide">
+                    <div class="slide-image-panel" style="background-image: url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=1200');"></div>
+                    <div class="slide-content-panel">
+                        <div class="slide-badge">🚚 LIVRAISON RAPIDE</div>
+                        <h3 class="slide-title">Service<br><span>Premium</span></h3>
+                        <p class="slide-description">Bénéficiez de notre service de livraison express et de l'accompagnement de nos experts agronomes partout en Côte d'Ivoire.</p>
+                        <div class="slide-tags">
+                            <span class="slide-tag">Express</span>
+                            <span class="slide-tag">Experts agronomes</span>
+                            <span class="slide-tag">Côte d'Ivoire</span>
                         </div>
-                        <h3 class="slide-title">Service Premium</h3>
-                        <p class="slide-description">
-                            Bénéficiez de notre service de livraison express et de l'accompagnement de nos experts agronomes partout en Côte d'Ivoire.
-                        </p>
                         <a href="#contact" class="slide-btn">
                             Nous contacter
                             <i class="fas fa-phone"></i>
@@ -195,16 +205,17 @@
                 </div>
 
                 <!-- Slide 4 -->
-                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1560493676-04071c5f467b?w=1600');">
-                    <div class="carousel-overlay"></div>
-                    <div class="carousel-content">
-                        <div class="slide-badge">
-                            ✅ QUALITÉ GARANTIE
+                <div class="carousel-slide">
+                    <div class="slide-image-panel" style="background-image: url('https://images.unsplash.com/photo-1560493676-04071c5f467b?w=1200');"></div>
+                    <div class="slide-content-panel">
+                        <div class="slide-badge">✅ QUALITÉ GARANTIE</div>
+                        <h3 class="slide-title">Produits<br><span>Certifiés</span></h3>
+                        <p class="slide-description">Tous nos produits sont certifiés et homologués. 15 ans d'expérience au service de l'excellence agricole.</p>
+                        <div class="slide-tags">
+                            <span class="slide-tag">Homologué</span>
+                            <span class="slide-tag">15 ans d'expérience</span>
+                            <span class="slide-tag">Excellence</span>
                         </div>
-                        <h3 class="slide-title">Produits Certifiés</h3>
-                        <p class="slide-description">
-                            Tous nos produits sont certifiés et homologués. 15 ans d'expérience au service de l'excellence agricole.
-                        </p>
                         <a href="#services" class="slide-btn">
                             Explorez nos produits
                             <i class="fas fa-arrow-right"></i>
@@ -213,18 +224,48 @@
                 </div>
             </div>
 
-            <!-- Navigation Arrows -->
-            <button class="carousel-nav carousel-prev" id="prevBtn">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-nav carousel-next" id="nextBtn">
-                <i class="fas fa-chevron-right"></i>
-            </button>
+            <!-- Navigation -->
+            <div class="carousel-controls">
+                <button class="carousel-nav carousel-prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <button class="carousel-nav carousel-next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
 
             <!-- Indicators -->
             <div class="carousel-indicators" id="indicators"></div>
         </div>
-    </section>
+        </section>
+
+        <section class="videos-section" id="videos">
+    <div class="header">
+        <div class="header-label">✦ MÉDIAS</div>
+        <h1>Nos Vidéos <span class="highlight">YouTube</span></h1>
+        <p class="header-subtitle">Découvrez nos conseils agricoles, tutoriels et présentations en vidéo</p>
+    </div>
+    <div class="videos-grid">
+        <div class="video-card">
+            <div class="video-responsive">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID1" title="Présentation PHYTOTOP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h3>Présentation de PHYTOTOP</h3>
+            <p>Découvrez notre engagement pour l'excellence et le rendement agricole depuis 2011.</p>
+        </div>
+
+        <div class="video-card">
+            <div class="video-responsive">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID2" title="Conseils d'utilisation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h3>Conseils d'utilisation des Produits</h3>
+            <p>Suivez les bonnes pratiques de nos experts agronomes pour maximiser l'efficacité des traitements.</p>
+        </div>
+    </div>
+</section>
 
     <div class="container" id="produits">
     <div class="header">
@@ -1171,6 +1212,47 @@
         </div>
     </div>
 
+    <section class="team-section slide-bottom" id="equipe">
+    <div class="header">
+        <div class="header-label">✦ ORGANISATION</div>
+        <h1>Notre <span class="highlight">Équipe</span></h1>
+        <p class="header-subtitle">Des experts passionnés dévoués à la protection de vos cultures</p>
+    </div>
+
+    <div class="team-filters">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="direction">Direction</button>
+        <button class="filter-btn" data-filter="technique">Technique</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+    </div>
+
+    <div class="team-grid">
+        <div class="team-card" data-category="direction">
+            <div class="team-member-img">
+                <i class="fa-solid fa-user-tie member-placeholder-icon"></i>
+            </div>
+            <h3>Nom du Dirigeant</h3>
+            <p class="team-role">Directeur Général</p>
+        </div>
+        
+        <div class="team-card" data-category="technique">
+            <div class="team-member-img">
+                <i class="fa-solid fa-user-gear member-placeholder-icon"></i>
+            </div>
+            <h3>Nom de l'Agronome</h3>
+            <p class="team-role">Expert Agronome</p>
+        </div>
+
+        <div class="team-card" data-category="commercial">
+            <div class="team-member-img">
+                <i class="fa-solid fa-user-large member-placeholder-icon"></i>
+            </div>
+            <h3>Nom du Commercial</h3>
+            <p class="team-role">Responsable Clientèle</p>
+        </div>
+    </div>
+</section>
+
     <section class="contact-section" id="contact">
         <div class="contact-header">
             <h1>Contactez-nous</h1>
@@ -1468,21 +1550,26 @@
 </div>
 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <div class="footer-logo">
-                    <img src="img/Logo.png" alt="">
-                </div>
-                
+    <div class="footer-content">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="img/Logo.png" alt="">
             </div>
-            
-            <p class="footer-tagline">Excellence Agricole depuis 2011</p>
-            
-            <div class="footer-divider"></div>
-            
-            <p class="footer-copyright">© 2026 PHYTOTOP. Tous droits réservés. Developped by HUEHA.</p>
         </div>
-    </footer>
+        
+        <p class="footer-tagline">Excellence Agricole depuis 2011</p>
+        
+        <div class="footer-legal-links" style="margin: 15px 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <a href="mention.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; font-weight: 400;">Mentions Légales</a>
+            <a href="cgu.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; font-weight: 400;">CGU</a>
+            <a href="politique.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; font-weight: 400;">Politique de Confidentialité</a>
+        
+        </div>
+
+        <div class="footer-divider"></div>
+        <p class="footer-copyright">© 2026 PHYTOTOP. Tous droits réservés. Developped by HUEHA.</p>
+    </div>
+</footer>
 
     <script src="script.js"></script>
 

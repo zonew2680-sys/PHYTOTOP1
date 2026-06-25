@@ -1059,6 +1059,19 @@ document.addEventListener('DOMContentLoaded', function() {
             indicators.forEach((indicator, index) => {
                 indicator.classList.toggle('active', index === currentIndex);
             });
+
+            // Mettre à jour le compteur de slides
+            const currentNum = document.getElementById('currentSlideNum');
+            if (currentNum) {
+                currentNum.textContent = String(currentIndex + 1).padStart(2, '0');
+            }
+
+            // Mettre à jour la barre de progression
+            const progressFill = document.getElementById('progressFill');
+            if (progressFill) {
+                const pct = ((currentIndex + 1) / totalSlides) * 100;
+                progressFill.style.width = pct + '%';
+            }
         }
 
         // Slide suivante
@@ -1141,3 +1154,139 @@ document.addEventListener('DOMContentLoaded', function() {
         // Initialisation
         createIndicators();
         startAutoPlay();
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    // ==========================================================
+    // 1. FILTRAGE INTERACTIF DE L'ÉQUIPE
+    // ==========================================================
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const teamCards = document.querySelectorAll(".team-card");
+
+    if (filterButtons.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                // Changer le bouton actif
+                document.querySelector(".filter-btn.active").classList.remove("active");
+                button.classList.add("active");
+
+                const filterValue = button.getAttribute("data-filter");
+
+                // Filtrer les cartes avec animation
+                teamCards.forEach(card => {
+                    const category = card.getAttribute("data-category");
+                    if (filterValue === "all" || category === filterValue) {
+                        card.classList.remove("hide");
+                        card.classList.add("show");
+                    } else {
+                        card.classList.remove("show");
+                        card.classList.add("hide");
+                    }
+                });
+            });
+        });
+    }
+
+    // ==========================================================
+    // 2. SOUMISSION DU FORMULAIRE EN AJAX (INTERACTIF)
+    // ==========================================================
+    const contactForm = document.getElementById("interactive-contact-form");
+    const formStatus = document.getElementById("form-status");
+    const submitBtn = document.getElementById("submit-btn");
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", function(e) {
+            e.preventDefault(); // Empêche le rechargement de la page
+
+            // Afficher le spinner et désactiver le bouton
+            submitBtn.disabled = true;
+            submitBtn.querySelector(".btn-text").style.display = "none";
+            submitBtn.querySelector(".spinner").style.display = "inline-block";
+
+            // Préparation des données
+            const formData = new FormData(this);
+
+            // Envoi de la requête asynchrone au serveur PHP
+            fetch("traitement-contact.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                // Réinitialiser le bouton
+                submitBtn.disabled = false;
+                submitBtn.querySelector(".btn-text").style.display = "inline-block";
+                submitBtn.querySelector(".spinner").style.display = "none";
+
+                // Afficher le message de succès de manière interactive
+                formStatus.style.display = "block";
+                formStatus.className = "form-status-box success";
+                formStatus.innerHTML = '<i class="fa-solid fa-circle-check"></i> Merci ! Votre message a été envoyé avec succès.';
+                
+                contactForm.reset(); // Vide les champs
+            })
+            .catch(error => {
+                submitBtn.disabled = false;
+                submitBtn.querySelector(".btn-text").style.display = "inline-block";
+                submitBtn.querySelector(".spinner").style.display = "none";
+
+                // Afficher l'erreur de manière interactive
+                formStatus.style.display = "block";
+                formStatus.className = "form-status-box error";
+                formStatus.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Une erreur est survenue, veuillez réessayer.';
+            });
+        });
+    }
+
+    // ==========================================================
+    // 3. PROTECTION DU CODE SOURCE AVEC TOAST NOTIFICATION
+    // ==========================================================
+    // Création dynamique de la div Toast de sécurité
+    const toast = document.createElement("div");
+    toast.className = "security-toast";
+    toast.innerHTML = '<i class="fa-solid fa-shield-halved"></i> <span>Action désactivée pour la sécurité du site.</span>';
+    document.body.appendChild(toast);
+
+    function triggerToast() {
+        toast.classList.add("show");
+        setTimeout(() => {
+            toast.classList.remove("show");
+        }, 3500); // Reste visible 3,5 secondes
+    }
+
+    // Blocage clic droit + Toast
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        triggerToast();
+    });
+
+    // Blocage raccourcis inspection (F12, Ctrl+Shift+I, etc.) + Toast
+    document.addEventListener('keydown', function(e) {
+        if (e.keyCode === 123 || 
+           (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) || 
+           (e.ctrlKey && e.keyCode === 85)) {
+            e.preventDefault();
+            triggerToast();
+            return false;
+        }
+    });
+
+    // ==========================================================
+    // 4. ANIMATION DES NOUVELLES SECTIONS AU SCROLL
+    // ==========================================================
+    // Utilise le système IntersectionObserver pour ajouter la classe '.animated' au bon moment
+    const animatedElements = document.querySelectorAll('.slide-bottom, .blur-in, .flip-in, .bounce-in');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animated');
+                observer.unobserve(entry.target); // L'animation ne se joue qu'une seule fois
+            }
+        });
+    }, { threshold: 0.15 });
+
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
+});
