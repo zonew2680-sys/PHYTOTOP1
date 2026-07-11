@@ -1,1577 +1,374 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHTOTOP - Excellence Agricole</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/Logofav.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHYTOTOP SARL — Protection et nutrition des cultures</title>
+<meta name="description" content="PHYTOTOP SARL distribue des produits phytosanitaires, engrais et semences de qualité aux producteurs de Côte d'Ivoire.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="moder.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Lato:wght@300;400;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="styleseet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
-    <div class="hero" id="accueil">
 
-        <div class="video-background">
-        <video autoplay muted loop playsinline poster="https://cdn.pixabay.com/photo/git commit -m ">
-            <source src="video/background_lobdc7.mp4" type="video/mp4">
-        </video>
-        <div class="video-overlay"></div>
+<header id="siteHeader">
+  <div class="wrap">
+    <nav>
+      <a href="#top" class="logo"><i class="fa-solid fa-leaf"></i> PHYTOTOP</a>
+      <ul class="nav-links">
+        <li><a href="#about">L'entreprise</a></li>
+        <li><a href="#products">Produits</a></li>
+        <li><a href="#why">Pourquoi nous</a></li>
+        <li><a href="#team">Équipe</a></li>
+        <li><a href="#media">Médias</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-solid">Demander un devis</a>
+        <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-media" id="heroMedia">
+    <div class="hero-fallback"></div>
+    <!-- Remplacez la source ci-dessous par votre propre vidéo (survol de champs, traitement, récolte...) -->
+    <video id="heroVideo" autoplay muted loop playsinline poster="">
+      <source src="video/background_lobdc7.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+    <div class="grain"></div>
+  </div>
+  <div class="hero-content">
+    <div class="wrap">
+      <span class="hero-tag">Distribution phytosanitaire — Côte d'Ivoire</span>
+      <h1>Protéger chaque culture,<br><em>récolte après récolte.</em></h1>
+      <p>PHYTOTOP accompagne producteurs, coopératives et distributeurs avec des solutions phytosanitaires, engrais et semences éprouvés, livrés partout où pousse la prochaine récolte.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary"><i class="fa-solid fa-seedling"></i> Découvrir nos produits</a>
+        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Parler à un conseiller</a>
+      </div>
+      <div class="spray-line" id="heroSpray"></div>
     </div>
-
-        <nav>
-            <div class="logo-container">
-                
-                <div class="brand">
-                    <div class="brand-name">PHYTOTOP</div>
-                    <div class="brand-tagline">Excellence Agricole</div>
-                </div>
-            </div>
-            
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#produits">Produits</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="Conctacts.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="hero-content">
-            <div class="badge">
-                🏆 Leader en Distribution Agro-chimique
-            </div>
-
-            <h1>
-                Cultivez le Succès<br>
-                <span class="highlight">Avec Excellence</span>
-            </h1>
-
-            <p class="subtitle">
-                Solutions agro-chimiques certifiées de qualité supérieure pour maximiser vos rendements <br> et protéger vos cultures
-            </p>
-
-            <div class="cta-buttons">
-                <a href="#produits" class="btn btn-primary">
-                    Découvrir nos produits →
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                    Nous contacter <i class="fa-solid fa-phone"></i>
-                </a>
-            </div>
- 
-        </div>
-
-        <div class="reso-icon">
-            <a href="https://www.instagram.com/Phytotop/?fbclid=IwAR2Imf6x9Ihxkw7Psr3HnwNxqM4I-fXYCiPt5uWM1LKjxr7eu5iU16RdbT4"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/phytotop.sarl"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://wa.me/+2250758949310"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://x.com/LeTopduPhyto"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.youtube.com/@phytotop578"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/company/phytotop/?originalSubdomain=ci"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-
-        <div class="scroll-indicator">
-            <i class="fa-solid fa-angles-down"></i>
-        </div>
-
-    </div>
-    <section class="stats-section">
-            <div class="stats-container">
-                <div class="stat-card">
-                    <div class="icon-container">
-                        <svg class="icon" viewBox="0 0 24 24">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <div class="stat-number" data-target="100">0</div>
-                    <div class="stat-label">Clients Satisfaits</div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="icon-container">
-                        <svg class="icon" viewBox="0 0 24 24">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                    </div>
-                    <div class="stat-number" data-target="40">0</div>
-                    <div class="stat-label">Produits Certifiés</div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="icon-container">
-                        <svg class="icon" viewBox="0 0 24 24">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                    </div>
-                    <div class="stat-number" data-target="15">0</div>
-                    <div class="stat-label">Années d'Expérience</div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="icon-container">
-                        <svg class="icon" viewBox="0 0 24 24">
-                            <rect x="1" y="3" width="15" height="13"></rect>
-                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
-                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
-                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
-                        </svg>
-                    </div>
-                    <div class="stat-number" data-target="50">0</div>
-                    <div class="stat-label">Livraisons/Mois</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="carousel-section">
-            <div class="carousel-header">
-                <div class="carousel-tag">✦ NOS PROMOTIONS</div>
-                <h2 class="carousel-title">Découvrez Nos <span class="highlight">Offres</span></h2>
-                <p class="carousel-subtitle">Des produits de qualité supérieure pour booster vos rendements agricoles</p>
-            </div>
-
-        <div class="carousel-container">
-            <!-- Slide counter -->
-            <div class="slide-counter">
-                <span id="currentSlideNum">01</span>
-                <span class="counter-sep">/</span>
-                <span class="counter-total">04</span>
-            </div>
-
-            <div class="carousel-wrapper" id="carouselWrapper">
-                <!-- Slide 1 -->
-                <div class="carousel-slide">
-                    <div class="slide-image-panel" style="background-image: url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200');"></div>
-                    <div class="slide-content-panel">
-                        <div class="slide-badge">🌱 NOUVELLE GAMME</div>
-                        <h3 class="slide-title">Engrais NPK<br><span>Premium</span></h3>
-                        <p class="slide-description">Maximisez vos rendements avec notre gamme complète d'engrais certifiés. Formulation équilibrée pour tous types de cultures.</p>
-                        <div class="slide-tags">
-                            <span class="slide-tag">Certifié</span>
-                            <span class="slide-tag">Toutes cultures</span>
-                            <span class="slide-tag">Haute efficacité</span>
-                        </div>
-                        <a href="#produits" class="slide-btn">
-                            Découvrir les produits
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="carousel-slide">
-                    <div class="slide-image-panel" style="background-image: url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1200');"></div>
-                    <div class="slide-content-panel">
-                        <div class="slide-badge">🛡️ PROTECTION OPTIMALE</div>
-                        <h3 class="slide-title">Insecticides<br><span>Efficaces</span></h3>
-                        <p class="slide-description">Protégez vos cultures contre tous les ravageurs. Action rapide et longue durée pour une protection maximale.</p>
-                        <div class="slide-tags">
-                            <span class="slide-tag">Action rapide</span>
-                            <span class="slide-tag">Longue durée</span>
-                            <span class="slide-tag">Protection max</span>
-                        </div>
-                        <a href="#produits" class="slide-btn">
-                            Voir la gamme
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="carousel-slide">
-                    <div class="slide-image-panel" style="background-image: url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=1200');"></div>
-                    <div class="slide-content-panel">
-                        <div class="slide-badge">🚚 LIVRAISON RAPIDE</div>
-                        <h3 class="slide-title">Service<br><span>Premium</span></h3>
-                        <p class="slide-description">Bénéficiez de notre service de livraison express et de l'accompagnement de nos experts agronomes partout en Côte d'Ivoire.</p>
-                        <div class="slide-tags">
-                            <span class="slide-tag">Express</span>
-                            <span class="slide-tag">Experts agronomes</span>
-                            <span class="slide-tag">Côte d'Ivoire</span>
-                        </div>
-                        <a href="#contact" class="slide-btn">
-                            Nous contacter
-                            <i class="fas fa-phone"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Slide 4 -->
-                <div class="carousel-slide">
-                    <div class="slide-image-panel" style="background-image: url('https://images.unsplash.com/photo-1560493676-04071c5f467b?w=1200');"></div>
-                    <div class="slide-content-panel">
-                        <div class="slide-badge">✅ QUALITÉ GARANTIE</div>
-                        <h3 class="slide-title">Produits<br><span>Certifiés</span></h3>
-                        <p class="slide-description">Tous nos produits sont certifiés et homologués. 15 ans d'expérience au service de l'excellence agricole.</p>
-                        <div class="slide-tags">
-                            <span class="slide-tag">Homologué</span>
-                            <span class="slide-tag">15 ans d'expérience</span>
-                            <span class="slide-tag">Excellence</span>
-                        </div>
-                        <a href="#services" class="slide-btn">
-                            Explorez nos produits
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Navigation -->
-            <div class="carousel-controls">
-                <button class="carousel-nav carousel-prev" id="prevBtn">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="carousel-progress-bar">
-                    <div class="progress-fill" id="progressFill"></div>
-                </div>
-                <button class="carousel-nav carousel-next" id="nextBtn">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-
-            <!-- Indicators -->
-            <div class="carousel-indicators" id="indicators"></div>
-        </div>
-        </section>
-
-        <section class="videos-section" id="videos">
-    <div class="header">
-        <div class="header-label">✦ MÉDIAS</div>
-        <h1>Nos Vidéos <span class="highlight">YouTube</span></h1>
-        <p class="header-subtitle">Découvrez nos conseils agricoles, tutoriels et présentations en vidéo</p>
-    </div>
-    <div class="videos-grid">
-        <div class="video-card">
-            <div class="video-responsive">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID1" title="Présentation PHYTOTOP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <h3>Présentation de PHYTOTOP</h3>
-            <p>Découvrez notre engagement pour l'excellence et le rendement agricole depuis 2011.</p>
-        </div>
-
-        <div class="video-card">
-            <div class="video-responsive">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID2" title="Conseils d'utilisation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <h3>Conseils d'utilisation des Produits</h3>
-            <p>Suivez les bonnes pratiques de nos experts agronomes pour maximiser l'efficacité des traitements.</p>
-        </div>
-    </div>
+  </div>
 </section>
 
-    <div class="container" id="produits">
-    <div class="header">
-        <div class="header-label">CATALOGUE</div>
-        <h1>Nos <span class="highlight">Produits</span></h1>
-        <p class="header-subtitle">Sélection rigoureuse de produits de qualité supérieure</p>
+<section class="stats">
+  <div class="wrap">
+    <div class="stat-item"><div class="stat-num" data-target="15">0+</div><div class="stat-label">Années d'expérience terrain</div></div>
+    <div class="stat-item"><div class="stat-num" data-target="200">0+</div><div class="stat-label">Références produits distribuées</div></div>
+    <div class="stat-item"><div class="stat-num" data-target="12">0</div><div class="stat-label">Régions couvertes en Côte d'Ivoire</div></div>
+    <div class="stat-item"><div class="stat-num" data-target="1000">0+</div><div class="stat-label">Producteurs accompagnés</div></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-visual">
+      <div class="rows"></div>
+      <div class="badge">Réseau de distribution actif dans 12 régions de Côte d'Ivoire</div>
     </div>
-
-    <div class="search-container">
-        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <circle cx="11" cy="11" r="8"></circle>
-            <path d="m21 21-4.35-4.35"></path>
-        </svg>
-        <input type="text" class="search-box" id="searchInput" placeholder="Rechercher un produit (ex: engrais, herbicide, NPK...)">
-        <svg class="clear-icon" id="clearSearch" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-
-        <div class="suggestions-dropdown" id="suggestionsDropdown"></div>
+    <div class="about-copy">
+      <div class="eyebrow">L'entreprise</div>
+      <h2>Un partenaire agricole de confiance, du champ jusqu'au dépôt.</h2>
+      <p>PHYTOTOP SARL distribue des produits phytosanitaires, engrais et semences sélectionnés pour leur efficacité et leur conformité réglementaire. Notre équipe technique conseille les producteurs sur le choix, le dosage et l'application des traitements, saison après saison.</p>
+      <p>Basés en Côte d'Ivoire, nous travaillons directement avec les coopératives, les distributeurs régionaux et les exploitations agricoles pour garantir une disponibilité constante des intrants, même en pleine campagne.</p>
+      <ul class="about-list">
+        <li><i class="fa-solid fa-check"></i> Produits homologués et conformes aux normes phytosanitaires</li>
+        <li><i class="fa-solid fa-check"></i> Conseil technique sur le terrain par nos agronomes</li>
+        <li><i class="fa-solid fa-check"></i> Logistique et livraison adaptées aux zones de production</li>
+      </ul>
+      <div class="see">
+      <a href="">Voir plus <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-
-    <div class="filters">
-        <button class="filter-btn active" data-filter="all">
-            🌱 Tous les produits
-        </button>
-        <button class="filter-btn" data-filter="engrais">
-            🌾 Engrais
-        </button>
-        <button class="filter-btn" data-filter="herbicide">
-            🌿 Herbicides
-        </button>
-        <button class="filter-btn" data-filter="insecticide">
-            🐛 Insecticides
-        </button>
-        <button class="filter-btn" data-filter="fongicide">
-            🍄 Fongicides
-        </button>
-        <button class="filter-btn" data-filter="stimulants-nematicides">
-            💪 Stimulants & Nematicides
-        </button>
-        <button class="filter-btn" data-filter="hygiene-publique">
-            🐀 Hygiene publique
-        </button>
-        <button class="filter-btn" data-filter="appareil">
-            💉 Appareils
-        </button>
     </div>
+  </div>
+</section>
 
-    <div class="products-grid" id="productsGrid">
-        
-        <!-- ENGRAIS -->
-        <div class="product-card" data-category="engrais" data-name="KARA VERT">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">50kg</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">KARA VERT</h3>
-                <p class="product-description">Engrais pour booster la croissance des jeunes cultures...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">25,000</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="engrais" data-name="KARA ROUGE">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">50kg</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">KARA ROUGE</h3>
-                <p class="product-description">Augmenter la concentration des sucres dans les fruits...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">22,000</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="engrais" data-name="KARA GOLD">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">50kg</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">KARA GOLD</h3>
-                <p class="product-description">Engrais NPK pour favoriser la floraison...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">25,000</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="engrais" data-name="FOLCROP Ca">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">50kg</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">FOLCROP Ca</h3>
-                <p class="product-description">Engrais riche en Calcium...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">22,000</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- HERBICIDES -->
-        <div class="product-card" data-category="herbicide" data-name="DOUO 800 WP & 800 SC">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">DOUO 800 WP & 800 SC</h3>
-                <p class="product-description">DOUO est un herbicide sélectif destiné au désherbage...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">8,500</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="herbicide" data-name="EFIKAX 720 SL">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">EFIKAX 720 SL</h3>
-                <p class="product-description">EFIKAX 720 SL est un herbicide parfaitement sélectif du riz et du maïs...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">6,500</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="herbicide" data-name="PRECIS 108 EC 250 mL">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">PRECIS 108 EC 250 mL</h3>
-                <p class="product-description">PRECIS 108 EC est un herbicide parfaitement sélectif du cotonnier...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">6,500</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="herbicide" data-name="MALOFLA 432 EC 1L">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">MALOFLA 432 EC 1L</h3>
-                <p class="product-description">MALOFLA est un herbicide systémique sélectif du riz...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">6,500</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="herbicide" data-name="MODEL 40 g/L 1L">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">MODEL 40 g/L 1L</h3>
-                <p class="product-description">MODEL 40 SC est un herbicide parfaitement sélectif du maïs...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">6,500</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="herbicide" data-name="TASMAN 480 SL/ 757 SG">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">TASMAN 480 SL/ 757 SG</h3>
-                <p class="product-description">TASMAN est un herbicide total non sélectif, destiné au désherbage...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">6,500</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="herbicide" data-name="TASMAN SUPER 200SL">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">TASMAN SUPER 200SL</h3>
-                <p class="product-description">TOUTERIN 200 WP est un herbicide, destiné au désherbage...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">6,500</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="herbicide" data-name="MALOFLA PLUS 200 0D">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">MALOFLA PLUS 200 0D</h3>
-                <p class="product-description">MALOFLA PLUS 200 0D est un herbicide pré levée...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">6,500</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="herbicide" data-name="TIGAFLA 100 SL">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">TIGAFLA 100 SL</h3>
-                <p class="product-description">TIGAFLA 100 SL est un herbicide sélectif de l'arachide, haricot, soja, niébé...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">6,500</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="herbicide" data-name="COLNOUMAN 400 EC">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">COLNOUMAN 400 EC</h3>
-                <p class="product-description">COLNOUMAN 400 EC est un herbicide pré-lévée sélectif...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">6,500</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="herbicide" data-name="IDEAL 200 WP">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">IDEAL 200 WP</h3>
-                <p class="product-description">IDEAL 200 WP est un herbicide parfaitement sélectif du riz...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">6,500</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- INSECTICIDES -->
-        <div class="product-card" data-category="insecticide" data-name="CACAOSUPER 40 EC">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">CACAOSUPER 40 EC</h3>
-                <p class="product-description">CACAOSUPER 40 EC est un puissant insecticide binaire...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">12,000</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="insecticide" data-name="REZO 50 EC">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">REZO 50 EC</h3>
-                <p class="product-description">REZO 50 EC est un insecticide très efficace contre les principaux ravageurs...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">12,000</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="insecticide" data-name="VETO 30 EC">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">VETO 30 EC</h3>
-                <p class="product-description">VETO 30 EC est un insecticide binaire et polyvalent...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">12,000</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="insecticide" data-name="TERMIX 50 SC">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">TERMIX 50 SC</h3>
-                <p class="product-description">TERMIX 50 SC est un insecticide très efficace contre les principaux ravageurs...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">12,000</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="insecticide" data-name="PROTEGE BOIS 200 EC">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">PROTEGE BOIS 200 EC</h3>
-                <p class="product-description">PROTEGE BOIS 200 EC est un insecticide destiné au traitement du bois...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">12,000</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="insecticide" data-name="MYSTIK 40 EC">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">MYSTIK 40 EC</h3>
-                <p class="product-description">MYSTIK 40 EC est un insecticide binaire très efficace contre les principaux ravageurs...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">9,500</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card" data-category="insecticide" data-name="FUMIFOX 560 FT">
-            <div class="product-image">
-                <svg viewBox="0 0 100 100">
-                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <rect x="35" y="35" width="30" height="30" rx="5"/>
-                </svg>
-                <div class="product-badge">1L</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">FUMIFOX 560 FT</h3>
-                <p class="product-description">FUMIFOX 560 FT est un insecticide très efficace destiné aux traitements des insectes...</p>
-                <div class="product-footer">
-                    <div>
-                        <span class="product-price">9,500</span>
-                        <span class="product-currency">FCFA</span>
-                    </div>
-                    <button class="product-btn">Commander</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- FONGICIDES -->
-            <div class="product-card" data-category="fongicide" data-name="BONEUR 250 EC">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1kg</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">BONEUR 250 EC</h3>
-                    <p class="product-description">BONEUR 250 EC est un fongicide systémique avec une action préventive et curative à la fois...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">7,500</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="fongicide" data-name="FOMA 10 GR 1Kg">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1kg</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">FOMA 10 GR 1Kg</h3>
-                    <p class="product-description">FOMA 10 GR est un fongicide systémique avec une action préventive et curative à la fois...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">7,500</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="fongicide" data-name="MANCOTOP 800 WP">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1kg</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">MANCOTOP 800 WP</h3>
-                    <p class="product-description">MANCOTOP 800 WP est un fongicide très efficace...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">7,500</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="fongicide" data-name="DIFEZOL 250 EC">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">DIFEZOL 250 EC</h3>
-                    <p class="product-description">DIFEZOLE 250 EC est un fongicide systémique...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="fongicide" data-name="SECURITY 660 WP">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">SECURITY 660 WP</h3>
-                    <p class="product-description">SECURITY 660 WP est un fongicide systémique...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="fongicide" data-name="BACTER 660 WP">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">BACTER 660 WP</h3>
-                    <p class="product-description">BACTER 660 WP est à la fois un fongicide et un bactéricide de contact...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- HYGIENE PUBLIQUE -->
-            <div class="product-card" data-category="hygiene-publique" data-name="BLOCK RAT">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">BLOCK RAT</h3>
-                    <p class="product-description">BLOC RAT est un puissant raticide qui tue les souris et les rats...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="hygiene-publique" data-name="VICTOIRE 25 SC">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">VICTOIRE 25 SC</h3>
-                    <p class="product-description">VICTOIRE 25 SC est un insecticide avec une action rapide et de longue durée d'efficacité...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="hygiene-publique" data-name="GEL CAFARD">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">GEL CAFARD</h3>
-                    <p class="product-description">Les cafards consomment le gel et meurent dans les heures qui suivent...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="hygiene-publique" data-name="REMPART 0,5 DP">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">REMPART 0,5 DP</h3>
-                    <p class="product-description">REMPART 0.5 DP est une poudre insecticide destiné au traitement extérieur des domiciles...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="hygiene-publique" data-name="CLEANTEX 100 SC g/L">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">CLEANTEX 100 SC g/L</h3>
-                    <p class="product-description">CLEANTEX 100 SC est un insecticide du bétail et animaux domestiques...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="hygiene-publique" data-name="VICTOIRE 25 EC">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">VICTOIRE 25 EC</h3>
-                    <p class="product-description">VICTOIRE 25 EC est un insecticide avec une action rapide et de longue durée d'efficacité...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- STIMULANTS ET NEMATICIDES -->
-            <div class="product-card" data-category="stimulants-nematicides" data-name="FURASOL 50 GR">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">FURASOL 50 GR</h3>
-                    <p class="product-description">FURASOL 50 GR a une action à la fois nématicide et insecticide...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="stimulants-nematicides" data-name="LATEX PLUS 5% PA">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">LATEX PLUS 5% PA</h3>
-                    <p class="product-description">LATEX PLUS 5% PA est un régulateur de croissance...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="stimulants-nematicides" data-name="GRAISSE HEVEA 1 Kg">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">GRAISSE HEVEA 1 Kg</h3>
-                    <p class="product-description">GRAISSE HEVEA est une graisse cicatrisante et désinfectante...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="stimulants-nematicides" data-name="LATEX PLUS 2.5% PA">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">LATEX PLUS 2.5% PA</h3>
-                    <p class="product-description">LATEX PLUS 2,5% PA est un stimulant hévéa prêt à l'emploi...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- APPAREILS -->
-
-            <div class="product-card" data-category="appareil" data-name="ATOMISEUR">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">ATOMISEUR</h3>
-                    <p class="product-description">ATOMISEUR est un appareil pour pulvériser les produits chimiques...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="appareil" data-name="PULVERISATEUR">
-                <div class="product-image">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                    <div class="product-badge">1L</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">PULVERISATEUR</h3>
-                    <p class="product-description">PULVERISATEUR est un appareil pour pulvériser les produits chimiques...</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">15,000</span>
-                            <span class="product-currency">FCFA</span>
-                        </div>
-                        <button class="product-btn">Commander</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="no-results" id="noResults">
-            Aucun produit trouvé. Essayez une autre recherche.
-        </div>
+<section class="products" id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Catalogue</div>
+      <h2>Des intrants pour chaque étape de la culture</h2>
+      <p>De la préparation du sol à la protection des récoltes, notre gamme couvre l'ensemble du cycle agricole.</p>
     </div>
-
-    <section class="team-section slide-bottom" id="equipe">
-    <div class="header">
-        <div class="header-label">✦ ORGANISATION</div>
-        <h1>Notre <span class="highlight">Équipe</span></h1>
-        <p class="header-subtitle">Des experts passionnés dévoués à la protection de vos cultures</p>
+  </div>
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="product-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+      <h3>Herbicides</h3>
+      <p>Contrôle sélectif et total des adventices pour préserver le rendement des parcelles.</p>
+      <span class="product-tag">Pré et post-levée</span>
     </div>
-
-    <div class="team-filters">
-        <button class="filter-btn active" data-filter="all">Tous</button>
-        <button class="filter-btn" data-filter="direction">Direction</button>
-        <button class="filter-btn" data-filter="technique">Technique</button>
-        <button class="filter-btn" data-filter="commercial">Commercial</button>
+    <div class="product-card">
+      <div class="product-icon"><i class="fa-solid fa-bug-slash"></i></div>
+      <h3>Insecticides</h3>
+      <p>Solutions ciblées contre les ravageurs des cultures vivrières et de rente.</p>
+      <span class="product-tag">Systémique / contact</span>
     </div>
+    <div class="product-card">
+      <div class="product-icon"><i class="fa-solid fa-virus-slash"></i></div>
+      <h3>Fongicides</h3>
+      <p>Prévention et traitement des maladies fongiques sur cacao, café, hévéa et cultures vivrières.</p>
+      <span class="product-tag">Curatif / préventif</span>
+    </div>
+    <div class="product-card">
+      <div class="product-icon"><i class="fa-solid fa-jar"></i></div>
+      <h3>Engrais</h3>
+      <p>Formules minérales et organo-minérales adaptées aux sols et cultures locales.</p>
+      <span class="product-tag">NPK / foliaire</span>
+    </div>
+  <div class="product-card">
+      <div class="product-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+      <h3>Semences</h3>
+      <p>Variétés sélectionnées à haut rendement, adaptées aux conditions climatiques régionales.</p>
+      <span class="product-tag">Certifiées</span>
+    </div>
+    <div class="product-card">
+      <div class="product-icon"><i class="fa-solid fa-toolbox"></i></div>
+      <h3>Matériel d'application</h3>
+      <p>Pulvérisateurs et équipements de protection pour une application sûre et précise.</p>
+      <span class="product-tag">EPI inclus</span>
+    </div>
+  </div>
+</section>
 
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Pourquoi PHYTOTOP</div>
+      <h2>Ce qui distingue notre accompagnement</h2>
+    </div>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="num">01 / Conformité</div>
+      <h3>Produits homologués</h3>
+      <p>Chaque référence respecte les normes phytosanitaires en vigueur en Côte d'Ivoire.</p>
+    </div>
+    <div class="why-card">
+      <div class="num">02 / Terrain</div>
+      <h3>Conseil agronomique</h3>
+      <p>Nos techniciens se déplacent pour diagnostiquer et recommander le bon traitement.</p>
+    </div>
+    <div class="why-card">
+      <div class="num">03 / Réseau</div>
+      <h3>Couverture régionale</h3>
+      <p>Un maillage de distribution qui limite les ruptures de stock en pleine campagne.</p>
+    </div>
+    <div class="why-card">
+      <div class="num">04 / Réactivité</div>
+      <h3>Livraison rapide</h3>
+      <p>Une logistique pensée pour les cycles agricoles et leurs urgences saisonnières.</p>
+    </div>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Notre équipe</div>
+      <h2>Les personnes derrière chaque conseil</h2>
+      <p>Une équipe d'agronomes et de techniciens présents sur le terrain, aux côtés des producteurs.</p>
+    </div>
     <div class="team-grid">
-        <div class="team-card" data-category="direction">
-            <div class="team-member-img">
-                <i class="fa-solid fa-user-tie member-placeholder-icon"></i>
-            </div>
-            <h3>Nom du Dirigeant</h3>
-            <p class="team-role">Directeur Général</p>
-        </div>
-        
-        <div class="team-card" data-category="technique">
-            <div class="team-member-img">
-                <i class="fa-solid fa-user-gear member-placeholder-icon"></i>
-            </div>
-            <h3>Nom de l'Agronome</h3>
-            <p class="team-role">Expert Agronome</p>
-        </div>
-
-        <div class="team-card" data-category="commercial">
-            <div class="team-member-img">
-                <i class="fa-solid fa-user-large member-placeholder-icon"></i>
-            </div>
-            <h3>Nom du Commercial</h3>
-            <p class="team-role">Responsable Clientèle</p>
-        </div>
+      <div class="team-card">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h4>Nom Prénom</h4>
+        <span>Direction générale</span>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h4>Nom Prénom</h4>
+        <span>Responsable technique</span>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h4>Nom Prénom</h4>
+        <span>Agronome conseil</span>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h4>Nom Prénom</h4>
+        <span>Responsable logistique</span>
+      </div>
     </div>
+  </div>
 </section>
 
-    <section class="contact-section" id="contact">
-        <div class="contact-header">
-            <h1>Contactez-nous</h1>
-            <p>Notre équipe est à votre écoute</p>
-        </div>
-
-        <div class="contact-container">
-            <div class="info-card">
-                <h2 class="card-title">Informations</h2>
-                
-                <div class="info-item">
-                    <div class="info-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                        </svg>
-                    </div>
-                    <div class="info-content">
-                        <h3>Téléphone</h3>
-                        <p><a href="tel:+225XXXXXXXXXX">(+225) 27 22 49 26 93 <br>
-                                                        (+225) 07 58 94 93 10 <br>
-                                                        (+225) 27 22 49 22 83</a></p>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                    </div>
-                    <div class="info-content">
-                        <h3>Email</h3>
-                        <p><a href="mailto:phytotop@phytotop.net">phytotop@phytotop.net</a></p>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                    </div>
-                    <div class="info-content">
-                        <h3>Adresse</h3>
-                        <p>Côte d'Ivoire - Riviera Palmeraie Cocody - Rond Point ADO</p>
-                    </div>
-                </div>
-
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.2713279331438!2d-3.968627426385886!3d5.375535194603363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ecca200c2861%3A0xfeba1bcb352967ca!2sPHYTOTOP!5e0!3m2!1sfr!2sci!4v1769121040052!5m2!1sfr!2sci" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-
-            <div class="form-card">
-                <h2 class="card-title">Envoyez un message</h2>
-                
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input 
-                            type="text" 
-                            class="form-input" 
-                            id="name"
-                            placeholder="Votre nom"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <input 
-                            type="tel" 
-                            class="form-input" 
-                            id="phone"
-                            placeholder="Votre numéro de téléphone"
-                            required
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <input 
-                            type="email" 
-                            class="form-input" 
-                            id="email"
-                            placeholder="Votre email (optionnel)"
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <textarea 
-                            class="form-textarea" 
-                            id="message"
-                            placeholder="Votre message"
-                            required
-                        ></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn" id="submitBtn">
-                        Envoyer
-                    </button>
-
-                    <div class="success-message" id="successMessage">
-                        ✓ Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <div class="partners-section">
-        <div class="section-header">
-            <div class="section-tag">NOS PARTENAIRES</div>
-            <h2 class="section-title">Ils nous font <span class="highlight">Confiance</span></h2>
-            <p class="section-subtitle">Partenaires de confiance pour des solutions agricoles de qualité</p>
-        </div>
-
-        <div class="carousel-container">
-            <div class="carousel-track">
-                <!-- Logo 1 -->
-                <div class="logo-item">
-                    <img src="img/partenaire1.png" alt="">
-                </div>
-
-                <!-- Logo 2 -->
-                <div class="logo-item">
-                    <img src="img/partenaire2.png" alt="">
-                </div>
-
-                <!-- Logo 3 -->
-                <div class="logo-item">
-                    <img src="img/partenaire3.png" alt="">
-                </div>
-
-                <!-- Logo 4 -->
-                <div class="logo-item">
-                    <img src="img/partenaire4.png" alt="">
-                </div>
-
-                <!-- Logo 5 -->
-                <div class="logo-item">
-                    <img src="img/partenaire5.png" alt="">
-                </div>
-
-                <!-- Logo 6 -->
-                <div class="logo-item">
-                    <img src="img/partenaire6.png" alt="">
-                </div>
-
-                <!-- Logo 7 -->
-                <div class="logo-item">
-                    <img src="img/partenaire7.png" alt="">
-                </div>
-
-                <!-- Logo 8 -->
-                <div class="logo-item">
-                    <img src="img/partenaire8.png" alt="">
-                </div>
-
-                <!-- Logo 9 -->
-                <div class="logo-item">
-                    <img src="img/partenaire9.png" alt="">
-                </div>
-
-                <!-- Logo 10 -->
-                <div class="logo-item">
-                    <img src="img/partenaire10.png" alt="">
-                </div>
-
-                <!-- Logo 11 -->
-                <div class="logo-item">
-                    <img src="img/partenaire11.png" alt="">
-                </div>
-
-                <!-- Logo 12 -->
-                <div class="logo-item">
-                    <img src="img/partenaire12.png" alt="">
-                </div>
-
-                <!-- Logo 13 -->
-                <div class="logo-item">
-                    <img src="img/partenaire13.png" alt="">
-                </div>
-
-                <!-- Duplication pour effet infini -->
-                <div class="logo-item">
-                    <img src="img/partenaire13.png" alt="">
-                </div>
-
-                <div class="logo-item">
-                    <img src="img/partenaire12.png" alt="">
-                </div>
-
-                <div class="logo-item">
-                    <img src="img/partenaire11.png" alt="">
-                </div>
-
-                <div class="logo-item">
-                    <img src="img/partenaire10.png" alt="">
-                </div>
-
-                <div class="logo-item">
-                    <img src="img/partenaire9.png" alt="">
-                </div>
-
-                <div class="logo-item">
-                    <img src="img/partenaire8.png" alt="">
-                </div>
-
-                <div class="logo-item">
-                    <img src="img/partenaire7.png" alt="">
-                </div>
-
-                <div class="logo-item">
-                    <img src="img/partenaire6.png" alt="">
-                </div>
-                <div class="logo-item">
-                    <img src="img/partenaire5.png" alt="">
-                </div>
-                <div class="logo-item">
-                    <img src="img/partenaire4.png" alt="">
-                </div>
-                <div class="logo-item">
-                    <img src="img/partenaire3.png" alt="">
-                </div>
-                <div class="logo-item">
-                    <img src="img/partenaire2.png" alt="">
-                </div>
-                <div class="logo-item">
-                    <img src="img/partenaire1.png" alt="">
-                </div>
-            </div>
-        </div>
-
+<section class="media" id="media">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Ressources</div>
+      <h2>Conseils et démonstrations en vidéo</h2>
+      <p>Bonnes pratiques d'application, présentation produits et témoignages de producteurs.</p>
     </div>
-
-    <!-- Modal Produit -->
-<div class="product-modal" id="productModal">
-    <div class="modal-overlay" id="modalOverlay"></div>
-    <div class="modal-content">
-        <button class="modal-close" id="modalClose">
-            <svg viewBox="0 0 24 24" width="24" height="24">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-        </button>
-        
-        <div class="modal-body">
-            <div class="modal-image-section">
-                <div class="modal-product-image" id="modalProductImage">
-                    <svg viewBox="0 0 100 100">
-                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="50" cy="50" r="25"/>
-                        <rect x="35" y="35" width="30" height="30" rx="5"/>
-                    </svg>
-                </div>
-                <div class="modal-badge" id="modalBadge">50kg</div>
-            </div>
-            
-            <div class="modal-info-section">
-                <h2 class="modal-title" id="modalTitle">NPK 15-15-15</h2>
-                <p class="modal-category" id="modalCategory">Engrais</p>
-                
-                <div class="modal-price-container">
-                    <span class="modal-price" id="modalPrice">25,000</span>
-                    <span class="modal-currency">FCFA</span>
-                </div>
-
-                <div class="modal-actions">
-                    <button class="modal-order-btn" id="modalOrderBtn">
-                        <svg viewBox="0 0 24 24" width="20" height="20">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                        </svg>
-                        Commander maintenant
-                    </button>
-                </div>
-                
-                <div class="modal-description">
-                    <h3>Description</h3>
-                    <p id="modalDescription">Engrais complet équilibré pour tous types de cultures</p>
-                </div>
-                
-                <div class="modal-details">
-                    <h3>Caractéristiques</h3>
-                    <ul id="modalFeatures">
-                        <li>✓ Certifié et homologué</li>
-                        <li>✓ Qualité supérieure</li>
-                        <li>✓ Livraison rapide disponible</li>
-                        <li>✓ Conseils techniques inclus</li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
+    <div class="media-grid">
+      <a class="media-card" href="#" target="_blank" rel="noopener">
+        <div class="rows"></div>
+        <div class="play"><i class="fa-solid fa-play"></i></div>
+        <div class="caption">Bien doser un herbicide</div>
+      </a>
+      <a class="media-card" href="#" target="_blank" rel="noopener">
+        <div class="rows"></div>
+        <div class="play"><i class="fa-solid fa-play"></i></div>
+        <div class="caption">Visite d'une parcelle de cacao</div>
+      </a>
+      <a class="media-card" href="#" target="_blank" rel="noopener">
+        <div class="rows"></div>
+        <div class="play"><i class="fa-solid fa-play"></i></div>
+        <div class="caption">Témoignage producteur</div>
+      </a>
     </div>
-</div>
+  </div>
+</section>
 
-    <footer class="footer">
-    <div class="footer-content">
-        <div class="footer-brand">
-            <div class="footer-logo">
-                <img src="img/Logo.png" alt="">
-            </div>
-        </div>
-        
-        <p class="footer-tagline">Excellence Agricole depuis 2011</p>
-        
-        <div class="footer-legal-links" style="margin: 15px 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-            <a href="mention.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; font-weight: 400;">Mentions Légales</a>
-            <a href="cgu.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; font-weight: 400;">CGU</a>
-            <a href="politique.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; font-weight: 400;">Politique de Confidentialité</a>
-        
-        </div>
-
-        <div class="footer-divider"></div>
-        <p class="footer-copyright">© 2026 PHYTOTOP. Tous droits réservés. Developped by HUEHA.</p>
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <div class="section-head">
+        <div class="eyebrow">Contact</div>
+        <h2>Un projet, une culture à protéger ?</h2>
+        <p>Notre équipe technique vous répond sous 24h ouvrées.</p>
+      </div>
+      <div class="contact-detail">
+        <i class="fa-solid fa-location-dot"></i>
+        <div><strong>Siège</strong><span>Abidjan, Côte d'Ivoire</span></div>
+      </div>
+      <div class="contact-detail">
+        <i class="fa-solid fa-phone"></i>
+        <div><strong>Téléphone</strong><span>+225 XX XX XX XX XX</span></div>
+      </div>
+      <div class="contact-detail">
+        <i class="fa-solid fa-envelope"></i>
+        <div><strong>Email</strong><span>contact@phytotop.ci</span></div>
+      </div>
     </div>
+    <form id="contactForm">
+      <div class="form-row">
+        <div class="field">
+          <label for="fname">Nom complet</label>
+          <input type="text" id="fname" placeholder="Votre nom" required>
+        </div>
+        <div class="field">
+          <label for="fphone">Téléphone</label>
+          <input type="tel" id="fphone" placeholder="+225 ..." required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="fregion">Région</label>
+        <select id="fregion">
+          <option>Abidjan</option>
+          <option>Yamoussoukro</option>
+          <option>Bouaké</option>
+          <option>San-Pédro</option>
+          <option>Korhogo</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="fmessage">Votre besoin</label>
+        <textarea id="fmessage" placeholder="Décrivez votre culture et votre besoin en intrants"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Envoyer la demande</button>
+      <p class="form-note">En soumettant ce formulaire, vous acceptez notre politique de confidentialité.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><i class="fa-solid fa-leaf"></i> PHYTOTOP</div>
+        <p>Distribution de produits phytosanitaires, engrais et semences pour les producteurs de Côte d'Ivoire.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="#about">L'entreprise</a></li>
+          <li><a href="#products">Produits</a></li>
+          <li><a href="#team">Équipe</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Produits</h5>
+        <ul>
+          <li><a href="#products">Herbicides</a></li>
+          <li><a href="#products">Insecticides</a></li>
+          <li><a href="#products">Fongicides</a></li>
+          <li><a href="#products">Engrais &amp; semences</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li>Abidjan, Côte d'Ivoire</li>
+          <li>+225 XX XX XX XX XX</li>
+          <li>contact@phytotop.ci</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> PHYTOTOP SARL. Tous droits réservés.</span>
+      <a class="dev" href="">Developed by HUEHA</a>
+      <div class="legal-links">
+        <button data-modal="cgu">CGU</button>
+        <button data-modal="mentions">Mentions légales</button>
+        <button data-modal="confidentialite">Politique de confidentialité</button>
+      </div>
+    </div>
+  </div>
 </footer>
 
-    <script src="script.js"></script>
+<!-- Modals -->
+<div class="modal-overlay" id="modal-cgu">
+  <div class="modal">
+    <button class="modal-close" data-close>&times;</button>
+    <h3>Conditions Générales d'Utilisation</h3>
+    <p>L'utilisation du site PHYTOTOP SARL implique l'acceptation pleine et entière des présentes conditions générales d'utilisation. Ces conditions sont susceptibles d'être modifiées à tout moment, les utilisateurs sont invités à les consulter régulièrement.</p>
+    <p>Le contenu de ce site (textes, images, logos) est la propriété de PHYTOTOP SARL, sauf mention contraire, et ne peut être reproduit sans autorisation préalable.</p>
+    <p>PHYTOTOP SARL s'efforce de fournir des informations aussi précises que possible, mais ne pourra être tenue responsable des omissions ou inexactitudes présentes sur le site.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-mentions">
+  <div class="modal">
+    <button class="modal-close" data-close>&times;</button>
+    <h3>Mentions légales</h3>
+    <p><strong>Éditeur du site :</strong> PHYTOTOP SARL, société de distribution de produits phytosanitaires, immatriculée en Côte d'Ivoire.</p>
+    <p><strong>Siège social :</strong> Abidjan, Côte d'Ivoire</p>
+    <p><strong>Directeur de la publication :</strong> Direction générale de PHYTOTOP SARL</p>
+    <p><strong>Hébergement :</strong> à compléter avec les coordonnées de votre hébergeur.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-confidentialite">
+  <div class="modal">
+    <button class="modal-close" data-close>&times;</button>
+    <h3>Politique de confidentialité</h3>
+    <p>PHYTOTOP SARL collecte uniquement les données nécessaires au traitement de vos demandes (nom, téléphone, région, message) via le formulaire de contact.</p>
+    <p>Ces données ne sont ni vendues ni cédées à des tiers, et sont conservées le temps nécessaire au traitement de votre demande.</p>
+    <p>Conformément à la réglementation en vigueur, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour l'exercer, contactez-nous à l'adresse indiquée dans nos coordonnées.</p>
+  </div>
+</div>
 
 </body>
+
+<script src="mod.js"></script>
 </html>

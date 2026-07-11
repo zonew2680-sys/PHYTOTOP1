@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<nav>
+            <div class="logo-container">
+                
+                <div class="brand">
+                    <div class="brand-name">PHYTOTOP</div>
+                    <div class="brand-tagline">Excellence Agricole</div>
+                </div>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="Conctacts.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <div class="container" id="produits">
+    <div class="header">
+        <div class="header-label">CATALOGUE</div>
+        <h1>Nos <span class="highlight">Produits</span></h1>
+        <p class="header-subtitle">Sélection rigoureuse de produits de qualité supérieure</p>
+    </div>
+
+    <div class="search-container">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <input type="text" class="search-box" id="searchInput" placeholder="Rechercher un produit (ex: engrais, herbicide, NPK...)">
+        <svg class="clear-icon" id="clearSearch" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+
+        <div class="suggestions-dropdown" id="suggestionsDropdown"></div>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">
+            🌱 Tous les produits
+        </button>
+        <button class="filter-btn" data-filter="engrais">
+            🌾 Engrais
+        </button>
+        <button class="filter-btn" data-filter="herbicide">
+            🌿 Herbicides
+        </button>
+        <button class="filter-btn" data-filter="insecticide">
+            🐛 Insecticides
+        </button>
+        <button class="filter-btn" data-filter="fongicide">
+            🍄 Fongicides
+        </button>
+        <button class="filter-btn" data-filter="stimulants-nematicides">
+            💪 Stimulants & Nematicides
+        </button>
+        <button class="filter-btn" data-filter="hygiene-publique">
+            🐀 Hygiene publique
+        </button>
+        <button class="filter-btn" data-filter="appareil">
+            💉 Appareils
+        </button>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+        
+        <!-- ENGRAIS -->
+        <div class="product-card" data-category="engrais" data-name="KARA VERT">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">50kg</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">KARA VERT</h3>
+                <p class="product-description">Engrais pour booster la croissance des jeunes cultures...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">25,000</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="engrais" data-name="KARA ROUGE">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">50kg</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">KARA ROUGE</h3>
+                <p class="product-description">Augmenter la concentration des sucres dans les fruits...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">22,000</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="engrais" data-name="KARA GOLD">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">50kg</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">KARA GOLD</h3>
+                <p class="product-description">Engrais NPK pour favoriser la floraison...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">25,000</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="engrais" data-name="FOLCROP Ca">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">50kg</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">FOLCROP Ca</h3>
+                <p class="product-description">Engrais riche en Calcium...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">22,000</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- HERBICIDES -->
+        <div class="product-card" data-category="herbicide" data-name="DOUO 800 WP & 800 SC">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">DOUO 800 WP & 800 SC</h3>
+                <p class="product-description">DOUO est un herbicide sélectif destiné au désherbage...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">8,500</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="herbicide" data-name="EFIKAX 720 SL">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">EFIKAX 720 SL</h3>
+                <p class="product-description">EFIKAX 720 SL est un herbicide parfaitement sélectif du riz et du maïs...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">6,500</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="herbicide" data-name="PRECIS 108 EC 250 mL">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">PRECIS 108 EC 250 mL</h3>
+                <p class="product-description">PRECIS 108 EC est un herbicide parfaitement sélectif du cotonnier...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">6,500</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="herbicide" data-name="MALOFLA 432 EC 1L">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">MALOFLA 432 EC 1L</h3>
+                <p class="product-description">MALOFLA est un herbicide systémique sélectif du riz...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">6,500</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="herbicide" data-name="MODEL 40 g/L 1L">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">MODEL 40 g/L 1L</h3>
+                <p class="product-description">MODEL 40 SC est un herbicide parfaitement sélectif du maïs...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">6,500</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="herbicide" data-name="TASMAN 480 SL/ 757 SG">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">TASMAN 480 SL/ 757 SG</h3>
+                <p class="product-description">TASMAN est un herbicide total non sélectif, destiné au désherbage...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">6,500</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="herbicide" data-name="TASMAN SUPER 200SL">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">TASMAN SUPER 200SL</h3>
+                <p class="product-description">TOUTERIN 200 WP est un herbicide, destiné au désherbage...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">6,500</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="herbicide" data-name="MALOFLA PLUS 200 0D">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">MALOFLA PLUS 200 0D</h3>
+                <p class="product-description">MALOFLA PLUS 200 0D est un herbicide pré levée...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">6,500</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="herbicide" data-name="TIGAFLA 100 SL">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">TIGAFLA 100 SL</h3>
+                <p class="product-description">TIGAFLA 100 SL est un herbicide sélectif de l'arachide, haricot, soja, niébé...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">6,500</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="herbicide" data-name="COLNOUMAN 400 EC">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">COLNOUMAN 400 EC</h3>
+                <p class="product-description">COLNOUMAN 400 EC est un herbicide pré-lévée sélectif...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">6,500</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="herbicide" data-name="IDEAL 200 WP">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">IDEAL 200 WP</h3>
+                <p class="product-description">IDEAL 200 WP est un herbicide parfaitement sélectif du riz...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">6,500</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- INSECTICIDES -->
+        <div class="product-card" data-category="insecticide" data-name="CACAOSUPER 40 EC">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">CACAOSUPER 40 EC</h3>
+                <p class="product-description">CACAOSUPER 40 EC est un puissant insecticide binaire...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">12,000</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="insecticide" data-name="REZO 50 EC">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">REZO 50 EC</h3>
+                <p class="product-description">REZO 50 EC est un insecticide très efficace contre les principaux ravageurs...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">12,000</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="insecticide" data-name="VETO 30 EC">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">VETO 30 EC</h3>
+                <p class="product-description">VETO 30 EC est un insecticide binaire et polyvalent...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">12,000</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="insecticide" data-name="TERMIX 50 SC">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">TERMIX 50 SC</h3>
+                <p class="product-description">TERMIX 50 SC est un insecticide très efficace contre les principaux ravageurs...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">12,000</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="insecticide" data-name="PROTEGE BOIS 200 EC">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">PROTEGE BOIS 200 EC</h3>
+                <p class="product-description">PROTEGE BOIS 200 EC est un insecticide destiné au traitement du bois...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">12,000</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="insecticide" data-name="MYSTIK 40 EC">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">MYSTIK 40 EC</h3>
+                <p class="product-description">MYSTIK 40 EC est un insecticide binaire très efficace contre les principaux ravageurs...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">9,500</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="insecticide" data-name="FUMIFOX 560 FT">
+            <div class="product-image">
+                <svg viewBox="0 0 100 100">
+                    <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="25"/>
+                    <rect x="35" y="35" width="30" height="30" rx="5"/>
+                </svg>
+                <div class="product-badge">1L</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">FUMIFOX 560 FT</h3>
+                <p class="product-description">FUMIFOX 560 FT est un insecticide très efficace destiné aux traitements des insectes...</p>
+                <div class="product-footer">
+                    <div>
+                        <span class="product-price">9,500</span>
+                        <span class="product-currency">FCFA</span>
+                    </div>
+                    <button class="product-btn">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- FONGICIDES -->
+            <div class="product-card" data-category="fongicide" data-name="BONEUR 250 EC">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1kg</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">BONEUR 250 EC</h3>
+                    <p class="product-description">BONEUR 250 EC est un fongicide systémique avec une action préventive et curative à la fois...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">7,500</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="fongicide" data-name="FOMA 10 GR 1Kg">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1kg</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">FOMA 10 GR 1Kg</h3>
+                    <p class="product-description">FOMA 10 GR est un fongicide systémique avec une action préventive et curative à la fois...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">7,500</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="fongicide" data-name="MANCOTOP 800 WP">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1kg</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">MANCOTOP 800 WP</h3>
+                    <p class="product-description">MANCOTOP 800 WP est un fongicide très efficace...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">7,500</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="fongicide" data-name="DIFEZOL 250 EC">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">DIFEZOL 250 EC</h3>
+                    <p class="product-description">DIFEZOLE 250 EC est un fongicide systémique...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="fongicide" data-name="SECURITY 660 WP">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">SECURITY 660 WP</h3>
+                    <p class="product-description">SECURITY 660 WP est un fongicide systémique...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="fongicide" data-name="BACTER 660 WP">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">BACTER 660 WP</h3>
+                    <p class="product-description">BACTER 660 WP est à la fois un fongicide et un bactéricide de contact...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HYGIENE PUBLIQUE -->
+            <div class="product-card" data-category="hygiene-publique" data-name="BLOCK RAT">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">BLOCK RAT</h3>
+                    <p class="product-description">BLOC RAT est un puissant raticide qui tue les souris et les rats...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="hygiene-publique" data-name="VICTOIRE 25 SC">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">VICTOIRE 25 SC</h3>
+                    <p class="product-description">VICTOIRE 25 SC est un insecticide avec une action rapide et de longue durée d'efficacité...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="hygiene-publique" data-name="GEL CAFARD">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">GEL CAFARD</h3>
+                    <p class="product-description">Les cafards consomment le gel et meurent dans les heures qui suivent...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="hygiene-publique" data-name="REMPART 0,5 DP">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">REMPART 0,5 DP</h3>
+                    <p class="product-description">REMPART 0.5 DP est une poudre insecticide destiné au traitement extérieur des domiciles...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="hygiene-publique" data-name="CLEANTEX 100 SC g/L">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">CLEANTEX 100 SC g/L</h3>
+                    <p class="product-description">CLEANTEX 100 SC est un insecticide du bétail et animaux domestiques...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="hygiene-publique" data-name="VICTOIRE 25 EC">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">VICTOIRE 25 EC</h3>
+                    <p class="product-description">VICTOIRE 25 EC est un insecticide avec une action rapide et de longue durée d'efficacité...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STIMULANTS ET NEMATICIDES -->
+            <div class="product-card" data-category="stimulants-nematicides" data-name="FURASOL 50 GR">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">FURASOL 50 GR</h3>
+                    <p class="product-description">FURASOL 50 GR a une action à la fois nématicide et insecticide...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="stimulants-nematicides" data-name="LATEX PLUS 5% PA">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">LATEX PLUS 5% PA</h3>
+                    <p class="product-description">LATEX PLUS 5% PA est un régulateur de croissance...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="stimulants-nematicides" data-name="GRAISSE HEVEA 1 Kg">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">GRAISSE HEVEA 1 Kg</h3>
+                    <p class="product-description">GRAISSE HEVEA est une graisse cicatrisante et désinfectante...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="stimulants-nematicides" data-name="LATEX PLUS 2.5% PA">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">LATEX PLUS 2.5% PA</h3>
+                    <p class="product-description">LATEX PLUS 2,5% PA est un stimulant hévéa prêt à l'emploi...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- APPAREILS -->
+
+            <div class="product-card" data-category="appareil" data-name="ATOMISEUR">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">ATOMISEUR</h3>
+                    <p class="product-description">ATOMISEUR est un appareil pour pulvériser les produits chimiques...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="appareil" data-name="PULVERISATEUR">
+                <div class="product-image">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M30 70 L50 30 L70 70 Z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="25"/>
+                        <rect x="35" y="35" width="30" height="30" rx="5"/>
+                    </svg>
+                    <div class="product-badge">1L</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">PULVERISATEUR</h3>
+                    <p class="product-description">PULVERISATEUR est un appareil pour pulvériser les produits chimiques...</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">15,000</span>
+                            <span class="product-currency">FCFA</span>
+                        </div>
+                        <button class="product-btn">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</body>
+</html>
