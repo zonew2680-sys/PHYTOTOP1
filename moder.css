@@ -249,6 +249,7 @@
     width:100%; padding:12px 14px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2);
     border-radius:var(--radius); color:#fff; font-family:'Lato',sans-serif; font-size:14.5px;
   }
+  .field option{color: #e2a92b; background-color: var(--ink);}
   .field textarea{resize:vertical; min-height:90px;}
   .field input::placeholder, .field textarea::placeholder{color:rgba(255,255,255,0.4);}
   .field input:focus, .field select:focus, .field textarea:focus{outline:2px solid var(--harvest); outline-offset:1px;}
