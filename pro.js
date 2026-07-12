@@ -52,14 +52,14 @@
     btn.addEventListener('click', () => {
       const card = btn.closest('.prod-card');
       const icon = card.querySelector('.prod-visual i').className;
-      const badge = card.querySelector('.prod-badge').textContent;
+      
       const tag = card.querySelector('.prod-tag').textContent;
       const name = card.querySelector('h3').textContent;
       const desc = card.querySelector('.prod-body p').textContent;
       const price = card.querySelector('.prod-price span').textContent;
 
       document.getElementById('detailIcon').className = icon;
-      document.getElementById('detailBadge').textContent = badge;
+      
       document.getElementById('detailTag').textContent = tag;
       document.getElementById('detailName').textContent = name;
       document.getElementById('detailDesc').textContent = desc;

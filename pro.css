@@ -55,7 +55,7 @@
   header.scrolled .burger span{background:var(--forest-dark);}
  
   /* PAGE BANNER */
-  .page-banner{background:linear-gradient(120deg, var(--forest-dark), var(--forest)); color:#fff; padding:150px 0 54px; position:relative; overflow:hidden;}
+  .page-banner{background:linear-gradient(120deg, var(--forest-dark), var(--forest)); color:#fff; padding:120px 0 54px; position:relative; overflow:hidden;}
   .page-banner::after{content:''; position:absolute; inset:0; background-image:repeating-linear-gradient(90deg, transparent 0 58px, rgba(255,255,255,0.05) 58px 59px); pointer-events:none;}
   .breadcrumb{ font-family:'IBM Plex Mono', monospace; letter-spacing: 0.16em; font-size:12.5px; color:#e2a82b9d; margin-bottom:16px; position:relative; z-index:1;}
   .breadcrumb a{color:var(--harvest);}
@@ -87,7 +87,7 @@
  
   /* PRODUCT GRID */
   .catalog-section{padding:24px 48px 100px;}
-  .prod-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:24px;}
+  .prod-grid{display:grid; grid-template-columns:repeat(4, 1fr); gap:24px;}
   @media (min-width:1400px){
     .prod-grid{grid-template-columns:repeat(4, 1fr); gap:28px;}
   }
@@ -181,9 +181,12 @@
   #orderForm{display:flex; flex-direction:column; gap:12px;}
   #orderForm input{padding:11px 14px; border:1px solid var(--line); border-radius:var(--radius); font-family:'Lato',sans-serif; font-size:14px;}
   #orderForm input:focus{outline:none; border-color:var(--leaf);}
+
+  .dev{color: rgba(199, 199, 199, 0.806); font-size: 11px; letter-spacing: 1px;}
+  .dev:hover{color: var(--harvest);}
  
   @media (max-width:980px){
-    .prod-grid{grid-template-columns:repeat(2,1fr);}
+    .prod-grid{grid-template-columns:repeat(3,1fr);}
     .catalog-section, .catalog-toolbar{padding-left:28px; padding-right:28px;}
     .footer-grid{grid-template-columns:1fr 1fr; row-gap:28px;}
   }
