@@ -139,10 +139,15 @@
     .pillars-grid{grid-template-columns:1fr;}
     .eng-grid{grid-template-columns:repeat(2,1fr);}
     .team-grid{grid-template-columns:repeat(2,1fr);}
+    .footer-grid{grid-template-columns:repeat(3,1fr); gap:32px; row-gap:32px;}
+    .footer-grid > div:first-child{grid-column:1 / -1;}
+    .footer-grid p{max-width:420px;}
     .stats-band .wrap{grid-template-columns:repeat(2,1fr); row-gap:24px; padding:36px 0;}
   }
   @media (max-width:720px){
     .nav-links{display:none;}
+    .footer-grid{grid-template-columns:1fr; row-gap:32px;}
+    .footer-grid p{max-width:none;}
     .burger{display:flex;}
     section{padding:60px 20px;}
     .eng-grid, .team-grid{grid-template-columns:1fr;}
