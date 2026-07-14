@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — PHYTOTOP SARL</title>
+<meta name="description" content="Contactez PHYTOTOP SARL : adresse, téléphone, email et formulaire de demande.">
+
+<link rel="stylesheet" href="tel.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Lato:wght@300;400;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo"><i class="fa-solid fa-leaf"></i> PHYTOTOP</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">L'entreprise</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="index.html#why">Pourquoi nous</a></li>
+        <li><a href="index.html#team">Équipe</a></li>
+        <li><a href="index.html#media">Médias</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-banner">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Contact</div>
+    <h1>Parlons de <em><span>votre prochaine campagne</span></em></h1>
+    <p>Une question sur un produit, une demande de devis, une livraison à planifier ? Notre équipe vous répond sous 24h ouvrées.</p>
+  </div>
+</div>
+
+<section class="contact-section">
+  <div class="contact-layout">
+
+    <div class="contact-info">
+      <div class="eyebrow">Coordonnées</div>
+      <div class="info-card">
+        <div class="contact-detail">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><strong>Siège social</strong><span>Abidjan, Côte d'Ivoire</span></div>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-phone"></i>
+          <div><strong>Téléphone</strong><span>(+225) 27 22 49 26 93 <br>
+              (+225) 07 58 94 93 10 <br>
+              (+225) 27 22 49 22 83</span></div>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-envelope"></i>
+          <div><strong>Email</strong><span>phytotop@phytotop.net</span></div>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-clock"></i>
+          <div><strong>Horaires</strong><span>Lundi – Vendredi, 8h – 17h30</span></div>
+        </div>
+        <div class="info-social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <span class="map-badge"><i class="fa-solid fa-location-dot"></i> PHYTOTOP SARL</span>
+        <iframe src="https://www.google.com/maps?q=Abidjan,C%C3%B4te%20d'Ivoire&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation PHYTOTOP SARL"></iframe>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <div class="eyebrow">Formulaire</div>
+      <div class="form-card">
+        <div class="form-success" id="formSuccess">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Merci, votre message a bien été envoyé. Notre équipe vous recontacte sous 24h.</span>
+        </div>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="field">
+              <label for="cname">Nom complet</label>
+              <input type="text" id="cname" placeholder="Votre nom" required>
+            </div>
+            <div class="field">
+              <label for="cphone">Téléphone</label>
+              <input type="tel" id="cphone" placeholder="+225 ..." required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="cemail">Email</label>
+              <input type="email" id="cemail" placeholder="vous@exemple.com">
+            </div>
+            <div class="field">
+              <label for="csubject">Sujet</label>
+              <select id="csubject">
+                <option>Demande de devis</option>
+                <option>Question sur un produit</option>
+                <option>Livraison</option>
+                <option>Partenariat / distribution</option>
+                <option>Autre</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cmessage">Message</label>
+            <textarea id="cmessage" placeholder="Décrivez votre besoin..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-solid" style="width:100%; justify-content:center;">Envoyer le message</button>
+          <p class="form-note">En soumettant ce formulaire, vous acceptez notre politique de confidentialité.</p>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><i class="fa-solid fa-leaf"></i> PHYTOTOP</div>
+        <p>Distribution de produits phytosanitaires, engrais et semences pour les producteurs de Côte d'Ivoire.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/phytotop.sarl" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/@phytotop578" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/company/phytotop/?originalSubdomain=ci" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/+2250758949310" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/Phytotop/?fbclid=IwAR2Imf6x9Ihxkw7Psr3HnwNxqM4I-fXYCiPt5uWM1LKjxr7eu5iU16RdbT4" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/LeTopduPhyto" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html#about">L'entreprise</a></li>
+          <li><a href="produits.html">Produits</a></li>
+          <li><a href="index.html#team">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Catégories</h5>
+        <ul>
+          <li><a href="produits.html">Herbicides</a></li>
+          <li><a href="produits.html">Insecticides</a></li>
+          <li><a href="produits.html">Fongicides</a></li>
+          <li><a href="produits.html">Engrais</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li>Abidjan, Côte d'Ivoire</li>
+          <li>(+225) 27 22 49 26 93 <br>
+              (+225) 07 58 94 93 10 <br>
+              (+225) 27 22 49 22 83</li>
+          <li>phytotop@phytotop.net</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> PHYTOTOP SARL. Tous droits réservés.</span>
+      <a class="dev" href="">Developed by HUEHA</a>
+      <div class="legal-links">
+        <button data-modal="cgu">CGU</button>
+        <button data-modal="mentions">Mentions légales</button>
+        <button data-modal="confidentialite">Politique de confidentialité</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modal-cgu">
+  <div class="modal">
+    <button class="modal-close" data-close>&times;</button>
+    <div class="modal-scroll">
+      <h3>Conditions Générales d'Utilisation</h3>
+      <p>L'utilisation du site PHYTOTOP SARL implique l'acceptation pleine et entière des présentes conditions générales d'utilisation.</p>
+      <p>Le contenu de ce site (textes, images, logos) est la propriété de PHYTOTOP SARL, sauf mention contraire, et ne peut être reproduit sans autorisation préalable.</p>
+      <p>PHYTOTOP SARL s'efforce de fournir des informations aussi précises que possible, mais ne pourra être tenue responsable des omissions ou inexactitudes présentes sur le site.</p>
+    </div>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-mentions">
+  <div class="modal">
+    <button class="modal-close" data-close>&times;</button>
+    <div class="modal-scroll">
+      <h3>Mentions légales</h3>
+      <p><strong>Éditeur du site :</strong> PHYTOTOP SARL, société de distribution de produits phytosanitaires, immatriculée en Côte d'Ivoire.</p>
+      <p><strong>Siège social :</strong> Abidjan, Côte d'Ivoire</p>
+      <p><strong>Directeur de la publication :</strong> Direction générale de PHYTOTOP SARL</p>
+      <p><strong>Hébergement :</strong> à compléter avec les coordonnées de votre hébergeur.</p>
+    </div>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-confidentialite">
+  <div class="modal">
+    <button class="modal-close" data-close>&times;</button>
+    <div class="modal-scroll">
+      <h3>Politique de confidentialité</h3>
+      <p>PHYTOTOP SARL collecte uniquement les données nécessaires au traitement de vos demandes. Ces données ne sont ni vendues ni cédées à des tiers.</p>
+      <p>Ces données ne sont ni vendues ni cédées à des tiers, et sont conservées le temps nécessaire au traitement de votre demande.</p>
+    <p>Conformément à la réglementation en vigueur, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour l'exercer, contactez-nous à l'adresse indiquée dans nos coordonnées.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<script src="tel.js"></script>
+</html>
