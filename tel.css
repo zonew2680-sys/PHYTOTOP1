@@ -118,6 +118,11 @@
     .form-row{grid-template-columns:1fr;}
     .contact-section{padding:60px 20px 80px;}
     .info-card, .form-card{padding:26px;}
+    /* Aligne les colonnes du footer à la verticale sur mobile */
+    .footer-grid {
+      grid-template-columns: 1fr !important;
+      gap: 32px;
+    }
   }
 
   /* FOOTER */
