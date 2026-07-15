@@ -30,11 +30,23 @@
   // Mobile menu (simple toggle)
   const burger = document.getElementById('burger');
   const navLinks = document.querySelector('.nav-links');
+
+  function openMenu(){
+    navLinks.style.cssText = 'display:flex; position:absolute; top:64px; left:0; right:0; background:#fff; flex-direction:column; padding:24px 32px; gap:18px; box-shadow:0 12px 24px rgba(0,0,0,0.08);';
+    navLinks.querySelectorAll('a').forEach(a => a.style.color = 'var(--ink)');
+    burger.classList.add('active');
+  }
+  function closeMenu(){
+    navLinks.style.cssText = '';
+    navLinks.querySelectorAll('a').forEach(a => a.style.color = '');
+    burger.classList.remove('active');
+  }
+
   burger.addEventListener('click', () => {
     const open = navLinks.style.display === 'flex';
-    navLinks.style.cssText = open ? '' : 'display:flex; position:absolute; top:64px; left:0; right:0; background:var(--cream); flex-direction:column; padding:24px 32px; gap:18px; box-shadow:0 12px 24px rgba(0,0,0,0.08);';
-    navLinks.querySelectorAll('a').forEach(a => a.style.color = open ? '' : 'var(--ink)');
+    open ? closeMenu() : openMenu();
   });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
   // Contact form (front-end only placeholder)
   document.getElementById('contactForm').addEventListener('submit', (e) => {

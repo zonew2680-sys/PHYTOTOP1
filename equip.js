@@ -15,9 +15,22 @@ const siteHeader = document.querySelector('header');
 
   const burger = document.getElementById('burger');
   const navLinks = document.querySelector('.nav-links');
+
+  function openMenu(){
+    navLinks.style.cssText = 'display:flex; position:absolute; top:60px; left:0; right:0; background:#fff; flex-direction:column; padding:20px 32px; gap:16px; z-index:50; box-shadow:0 12px 24px rgba(0,0,0,0.08);';
+    navLinks.querySelectorAll('a').forEach(a => a.style.color = 'var(--ink)');
+    burger.classList.add('active');
+  }
+  function closeMenu(){
+    navLinks.style.cssText = '';
+    navLinks.querySelectorAll('a').forEach(a => a.style.color = '');
+    burger.classList.remove('active');
+  }
+
   burger.addEventListener('click', () => {
     const open = navLinks.style.display === 'flex';
-    navLinks.style.cssText = open ? '' : 'display:flex; position:absolute; top:60px; left:0; right:0; background:var(--forest-dark); flex-direction:column; padding:20px 32px; gap:16px; z-index:50;';
+    open ? closeMenu() : openMenu();
   });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
   document.getElementById('year').textContent = new Date().getFullYear();
